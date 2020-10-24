@@ -1,3 +1,251 @@
-p {
-  color: red;
+body {
+  background-color: #10141f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  /*a name to be used later*/
+  src: url('./fonts/Poppins/Poppins-Medium.ttf');
+  /*URL to font*/
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('./fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f113; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #488d9e, #b432b0);
+}
+
+@keyframes appearTitle {
+  from {
+    opacity: 0;
+    font-size: 65px;
+  }
+  to {
+    opacity: 1.0;
+    font-size: 80px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+
+@keyframes buttonAnim {
+  from {
+    opacity: 0;
+    transform: translateX(760px) translateY(-80px);
+  }
+  to {
+    opacity: 1.0;
+    transform: translateX(760px) translateY(-50px);
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+.container2 {
+  text-align: center;
+}
+
+.container3 {
+  text-align: center;
+}
+
+.container4 {
+  text-align: center;
+}
+
+.addButton {
+  border-radius: 100rem;
+  padding: 1rem;
+  animation-name: buttonAnim;
+  opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  color: white;
+  padding: .5rem 1.7rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Poppins-Medium';
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.addButton:hover {
+  box-shadow: 2px 1000px 1px #10141f inset;
+  color: white;
+}
+
+.scCmd {
+  border-radius: 100rem;
+  padding: 1rem;
+  animation-name: buttonAnim;
+  opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  color: white;
+  padding: .5rem 1.7rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #D9A083, #FEE8B8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #10141f inset;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Poppins-Medium';
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.scCmd:hover {
+  box-shadow: none;
+  color: white;
+}
+
+h1 {
+  color: rgb(232, 240, 255);
+  text-align: center;
+  font-family: Poppins-ExtraBold;
+  margin-top: 400px;
+  margin-right: 15px;
+  opacity: 0;
+  animation-name: appearTitle;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.hrT {
+  border: 0;
+  opacity: 0;
+  height: 4px;
+  width: 60px;
+  background: #78e4ff;
+  background-image: linear-gradient(101deg, #78e4ff, #ff48fa);
+  transform: translateY(-10px);
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+}
+
+h2 {
+  color: rgb(232, 240, 255);
+  text-align: center;
+  font-family: Poppins-ExtraBold;
+  margin-top: 500px;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+}
+
+h3 {
+  color: rgb(232, 240, 255);
+  text-align: left;
+  font-family: Poppins-ExtraBold;
+  margin-top: 150px;
+  margin-left: 300px;
+  font-size: 40px;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.h3right {
+  color: rgb(232, 240, 255);
+  text-align: right;
+  font-family: Poppins-ExtraBold;
+  margin-top: 150px;
+  margin-right: 300px;
+  font-size: 40px;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.descLeft {
+  color: rgb(232, 240, 255);
+  font-family: Poppins-Medium;
+  text-align: left;
+  font-size: 20px;
+  transform: translateY(-40px);
+  margin-left: 300px;
+  font-size: 20px;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.descRight {
+  color: rgb(232, 240, 255);
+  font-family: Poppins-Medium;
+  text-align: right;
+  font-size: 20px;
+  transform: translateY(-40px);
+  margin-right: 300px;
+  font-size: 20px;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
 }

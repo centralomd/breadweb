@@ -1,4 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" class="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>breadbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="_media/bread_favicon/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description"
+    content="A discord bot that have fun commands, dynamic embeds, and friendly human-like conversation.">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ duration: 3000, reset: true });
+  </script>
+</head>
+
+<body>
+  <h1>Breadbot</h1>
+
+  <button class="addButton" onclick="window.open(
+    'https:\/\/discord.com/api/oauth2/authorize?client_id=718799032939708446&permissions=8&redirect_uri=https%3A%2F%2Fbreadbot.yolasite.com%2Fthanks%2F&scope=bot',
+    '_blank'
+    )">Add to Discord</button>
+
+  <a href="#cmdSec" class="scCmd">Features</a>
+
+  <h2 id="cmdSec">Features</h2>
+  <hr class="hrT" />
+
+  <div class="container">
+    <h3 id="funTitle">Fun Commands</h3>
+    <p class="descLeft">Bored? You can use bread's Fun commands, <br> and some of them even have streaks!</p>
+  </div>
+  <div class="container2">
+    <h3 class="h3right">Dynamic UI</h3>
+    <p class="descRight">Bread has a dynamic UI, which shows your <br> userdata stats on a generated image.</p>
+  </div>
+
+  <style>
+    .footer {
+      position: fixed;
+      right: 1em;
+      text-align: right;
+      bottom: 0;
+      font-size: 15px;
+      background-color: transparent;
+      color: white;
+      opacity: 0.4;
+      font-family: Poppins-Medium;
+    }
+  </style>
+  <div class="footer">
+    <p>Coded with 💖 by centralomd.</p>
+  </div>
+  <script>
+    ScrollReveal().reveal('#cmdSec');
+    ScrollReveal().reveal('.hrT');
+    ScrollReveal().reveal('.container');
+    ScrollReveal().reveal('.container2');
+    ScrollReveal().reveal('.container3');
+    ScrollReveal().reveal('.container4');
+  </script>
+</body>
+
 </html>
